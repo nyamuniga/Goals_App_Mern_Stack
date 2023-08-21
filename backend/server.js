@@ -12,8 +12,11 @@ app.use(express.urlencoded({ extended: false }));
 
 const PORT = process.env.PORT;
 
-//members api routes
+//goals api routes
 app.use('/api/goals',require('./routes/api/goalRoutes'));
+
+//users api routes
+app.use('/api/users',require('./routes/api/userRoutes'));
 
 app.use(errorHandler);
 

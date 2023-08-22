@@ -17,7 +17,7 @@ const getUsers= asyncHandler(async (req,res) => {
 //@access Private
 const getMe = asyncHandler(async (req,res) => {
  
-     res.status(200).json({message: 'get Me'})
+     res.status(200).json(req.user)
    
  })
 
@@ -56,7 +56,6 @@ const loginUser = asyncHandler(async (req,res) => {
     }
     
 
-    res.status(200).json({message: 'user login'})
   
 })
 

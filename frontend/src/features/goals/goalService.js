@@ -1,5 +1,5 @@
 import axios from 'axios'
-const API_URL = '/api/goals/'
+const API_URL = 'https://goalsapp-backend.vercel.app/api/goals/'
 
 
 

@@ -7,7 +7,7 @@ const connectDB = require('./config/db');
 const res = require('express/lib/response');
 const app = express();
 
-connectDB()
+// connectDB()
 //body parser
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

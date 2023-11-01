@@ -31,4 +31,9 @@ app.get('/', (req,res) => res.send('Please set to production'))
 
 app.use(errorHandler);
 
-app.listen(PORT, () => console.log(`server running on port ${PORT}`));
+connectDB().then(() => {
+    console.log("Database connected");
+    app.listen(PORT, () =>
+      console.log(`Server running on port: http://localhost:${PORT}`)
+    );
+  });
